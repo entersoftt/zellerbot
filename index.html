@@ -21,6 +21,12 @@
       border-radius: 16px;
       box-shadow: 0 4px 20px #0001;
     }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
     button {
       background: #1769ff;
       color: white;
@@ -35,9 +41,14 @@
   <div class="card">
     <h1>¡Mi sitio ya funciona!</h1>
     <p>Esta es mi primera página publicada con GitHub Pages.</p>
-    <button onclick="alert('¡Todo funciona correctamente!')">
-      Probar página
-    </button>
+    <div class="actions">
+      <button onclick="alert('¡Todo funciona correctamente!')">
+        Probar página
+      </button>
+      <button onclick="alert('¡Este es el segundo botón!')">
+        Saludar
+      </button>
+    </div>
   </div>
 </body>
 </html>
